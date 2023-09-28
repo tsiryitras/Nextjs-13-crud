@@ -16,7 +16,7 @@ export default function RootLayout({
       <body>
         <div className="">
           <Navbar />
-          <div className="px-8 py-8">{children}</div>
+          <div className="px-8 py-8">aaaa{children}</div>
         </div>
       </body>
     </html>
