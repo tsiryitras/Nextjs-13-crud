@@ -4,7 +4,7 @@ import { SyntheticEvent, useState } from "react";
 import { useRouter } from "next/navigation";
 import { Product } from "@/models/Product";
 
-export default function UpdateProduct(props) {
+export default function UpdateProduct(props: { product: any; id: any }) {
   const { product, id } = props;
 
   const [title, setTitle] = useState(product.title);

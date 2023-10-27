@@ -9,7 +9,7 @@ type Product = {
   price: number;
 };
 
-export default function DeleteProduct(props) {
+export default function DeleteProduct(props: { product: any; id: any }) {
   const { product, id } = props;
 
   const [modal, setModal] = useState(false);
