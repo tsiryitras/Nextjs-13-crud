@@ -1,5 +1,8 @@
 import Navbar from "@/components/Navbar";
 import "./globals.css";
+import { store } from "./stores/stores";
+import { Provider } from "react-redux";
+import { Providers } from "./stores/provider";
 
 export const metadata = {
   title: "Accueil",
@@ -16,7 +19,9 @@ export default function RootLayout({
       <body>
         <div className="">
           <Navbar />
-          <div className="px-8 py-8">{children}</div>
+          <div className="px-8 py-8">
+            <Providers>{children}</Providers>
+          </div>
         </div>
       </body>
     </html>
